@@ -1,14 +1,4 @@
-<div class="row">
-  <div class="col-12">
-    <img src="" alt="" class="img-fluid">
-  </div>
-</div>
-<div class="row">
-  <div class="col-12">
-    <h1>Recipe Name</h1>
-  </div>
-</div>
-<div class="row">
+<div class="row mb-5">
   <div class="col-12">
     <div class="btn-group">
       <button
@@ -26,7 +16,22 @@
 </div>
 <div class="row">
   <div class="col-12">
-    Description
+    <img
+      [src]="recipe.imagePath"
+      alt=""
+      class="img-fluid"
+      style="max-width: 200px"
+    >
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <h1>{{recipe.name}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    {{recipe.description}}
   </div>
 </div>
 <div class="row">
