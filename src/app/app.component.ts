@@ -9,4 +9,5 @@ import {ShoppingListService} from './shopping-list/shopping-list.service';
   providers: [RecipeService, ShoppingListService]
 })
 export class AppComponent {
+  title: string;
 }
