@@ -2,3 +2,10 @@ input.ng-invalid.ng-touched,
 textarea.ng-invalid.ng-touched {
   border: 2px solid red;
 }
+
+img {
+  max-height: 250px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
