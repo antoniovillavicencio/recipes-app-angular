@@ -77,7 +77,7 @@ export class RecipeEditComponent implements OnInit {
   }
 
   onAddIngredient(): void {
-    this.ingredientControls.push(
+    (this.recipeForm.get('ingredients') as FormArray).push(
       new FormGroup({
         name: new FormControl(null, Validators.required),
         amount: new FormControl(null, [
@@ -94,5 +94,9 @@ export class RecipeEditComponent implements OnInit {
 
   onCancel(): void {
     this.router.navigate(['../'], { relativeTo: this.route });
+  }
+
+  onDeleteIngredient(i: number): void {
+    (this.recipeForm.get('ingredients') as FormArray).removeAt(i);
   }
 }
